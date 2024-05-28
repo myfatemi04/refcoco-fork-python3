@@ -251,7 +251,7 @@ class REFER:
 				# polygon used for refcoco*
 				for seg in ann['segmentation']:
 					poly = np.array(seg).reshape((len(seg)//2, 2))
-					polygons.append(Polygon(poly, True, alpha=0.4))
+					polygons.append(Polygon(poly, closed=True, alpha=0.4))
 					color.append(c)
 				p = PatchCollection(polygons, facecolors=color, edgecolors=(1,1,0,0), linewidths=3, alpha=1)
 				ax.add_collection(p)  # thick yellow polygon

@@ -12,3 +12,6 @@ data/refcocog
 
 # .pyc
 *.pyc
+
+build
+*.so
